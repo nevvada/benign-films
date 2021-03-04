@@ -4,9 +4,10 @@ import React from 'react';
 
 import styles from './Header.module.scss';
 
-const FILMS_PATHNAME = '/films';
 const ABOUT_PATHNAME = '/about';
 const CONTACT_PATHNAME = '/contact';
+const FILMS_PATHNAME = '/films';
+const HOME_PATHNAME = '/';
 
 const Header: React.FC = () => {
   const { pathname } = useRouter();
@@ -18,18 +19,19 @@ const Header: React.FC = () => {
           HOME
         </Link>
       </li>
+      <li className={`${styles.navItem} ${pathname === FILMS_PATHNAME ? styles.activeRoute : ''}`}>
         <Link href={FILMS_PATHNAME}>
-          films
+          FILMS
         </Link>
       </li>
-      <li {...(pathname === ABOUT_PATHNAME && { className: styles.activeRoute })}>
+      <li className={`${styles.navItem} ${pathname === ABOUT_PATHNAME ? styles.activeRoute : ''}`}>
         <Link href={ABOUT_PATHNAME}>
-          about
+          ABOUT
         </Link>
       </li>
-      <li {...(pathname === CONTACT_PATHNAME && { className: styles.activeRoute })}>
+      <li className={`${styles.navItem} ${pathname === CONTACT_PATHNAME ? styles.activeRoute : ''}`}>
         <Link href={CONTACT_PATHNAME}>
-          contact
+          CONTACT
         </Link>
       </li>
     </ul>
