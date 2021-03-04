@@ -1,4 +1,8 @@
-.nav {
+.activeRoute > a {
+  color: #F4F4F4;
+}
+
+.navBar {
   display: flex;
   font-size: 2em;
   justify-content: space-around;
