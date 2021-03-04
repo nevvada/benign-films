@@ -4,7 +4,10 @@ import Layout from '../components/Layout/Layout';
 
 const Contact: React.FC = () => (
   <Layout>
-    colterfriend@gmail.com
+    <section>
+      <p>Colter Harris</p>
+      <p>colterfriend@gmail.com</p>
+    </section>
   </Layout>
 );
 
