@@ -1,14 +1,18 @@
 * {
-  font-family: 'Permanent Marker', cursive;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-html {
-  background-color: #E0B7B7;
-  box-sizing: border-box;
-  color: #2F2F2F;
-  margin: 0 !important;
+body {
+  background-color: #E7CFCD;
+  background-image: linear-gradient(#B5C9C3, #E7CFCD);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  font-family: 'Nanum Pen Script', cursive;
+  height: 100vh;
 }
 
 ul {
@@ -16,6 +20,6 @@ ul {
 }
 
 a {
-  color: #2F2F2F;
+  // color: #FFF;
   text-decoration: none;
 }
