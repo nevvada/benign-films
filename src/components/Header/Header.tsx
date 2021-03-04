@@ -13,7 +13,11 @@ const Header: React.FC = () => {
 
   return (
     <ul className={styles.navBar}>
-      <li {...(pathname === FILMS_PATHNAME && { className: styles.activeRoute })}>
+      <li className={`${styles.navItem} ${pathname === HOME_PATHNAME ? styles.activeRoute : ''}`}>
+        <Link href={HOME_PATHNAME}>
+          HOME
+        </Link>
+      </li>
         <Link href={FILMS_PATHNAME}>
           films
         </Link>
