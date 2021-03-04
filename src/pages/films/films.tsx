@@ -1,25 +1,28 @@
 import Image from 'next/image';
 import React from 'react';
 
-import Layout from '../components/Layout/Layout';
+import Layout from '../../components/Layout/Layout';
 
-import filmList from '../filmList';
+import filmList from '../../filmList';
 
 const renderFilmList = (films) => (
   films.map(film => {
     const { date, imageSrc, info, title} = film;
 
     return (
-      <>
-        <h1>{title}</h1>
-        <h4>{date}</h4>
-        <p>{info}</p>
+      <article style={{ display: 'flex' }}>
         <Image
           height={600}
           src={imageSrc}
-          width={600}
+          width={500}
         />
-      </>
+        <aside style={{ display: 'flex' }}>
+          <h1>{title}</h1>
+          <h4>{date}</h4>
+          <p>{info}</p>
+        </aside>
+
+      </article>
     )
   })
 );
