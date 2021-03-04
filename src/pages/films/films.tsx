@@ -9,7 +9,7 @@ import filmList, { Film } from '../../filmList';
 
 const renderFilmList = (films: Film[]) => (
   films.map(film => {
-    const { date, imageSrc, info, title} = film;
+    const { date, description, imageSrc, title} = film;
 
     return (
       <article
@@ -25,7 +25,7 @@ const renderFilmList = (films: Film[]) => (
         <div className={styles.filmInfo}>
           <h1 className={styles.filmInfoTitle}>{title}</h1>
           <h4 className={styles.filmInfoDate}>{date}</h4>
-          <p className={styles.filmInfoDescription}>{info}</p>
+          <p className={styles.filmInfoDescription}>{description}</p>
         </div>
 
       </article>
