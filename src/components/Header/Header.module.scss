@@ -1,0 +1,22 @@
+.navBar {
+  display: flex;
+  font-size: 4em;
+  justify-content: space-around;
+  margin: 0.5em 0 2em 0;
+}
+
+.navItem > a {
+  color: #FFF;
+  display: inline-block;
+  position: relative;
+  text-decoration: underline solid transparent;
+  transition: text-decoration 0.5s ease;
+
+  &:hover {
+    text-decoration: underline solid #FFF;
+  }
+}
+
+.activeRoute > a {
+  text-decoration: underline solid #FFF;
+}
