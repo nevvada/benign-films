@@ -1,0 +1,20 @@
+{
+  "name": "benign-films",
+  "version": "1.0.0",
+  "description": "This is the site to Benign Films",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nlemast/benign-films.git"
+  },
+  "keywords": [],
+  "author": "Nathan Le Master",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nlemast/benign-films/issues"
+  },
+  "homepage": "https://github.com/nlemast/benign-films#readme"
+}
