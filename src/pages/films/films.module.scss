@@ -14,6 +14,8 @@
 .filmInfo {
   display: flex;
   flex-direction: column;
+  transform: rotate(-10deg);
+  padding-left: 2em;
 }
 
 .filmInfoDate {
@@ -22,12 +24,12 @@
 
 .filmInfoDescription {
   font-size: 1.2em;
-  margin: 0.5em 0;
+  margin: 1em 0;
 }
 
 .filmInfoTitle {
   font-size: 4em;
-  margin: 0.5em 0;
+  margin: 1.5em 0;
 }
 
 .image {
