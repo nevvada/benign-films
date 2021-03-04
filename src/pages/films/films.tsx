@@ -3,24 +3,30 @@ import React from 'react';
 
 import Layout from '../../components/Layout/Layout';
 
-import filmList from '../../filmList';
+import styles from './films.module.scss';
 
-const renderFilmList = (films) => (
+import filmList, { Film } from '../../filmList';
+
+const renderFilmList = (films: Film[]) => (
   films.map(film => {
     const { date, imageSrc, info, title} = film;
 
     return (
-      <article style={{ display: 'flex' }}>
+      <article
+        className={styles.article}
+        key={title}
+      >
         <Image
+          className={styles.image}
           height={600}
           src={imageSrc}
           width={500}
         />
-        <aside style={{ display: 'flex' }}>
-          <h1>{title}</h1>
-          <h4>{date}</h4>
-          <p>{info}</p>
-        </aside>
+        <div className={styles.filmInfo}>
+          <h1 className={styles.filmInfoTitle}>{title}</h1>
+          <h4 className={styles.filmInfoDate}>{date}</h4>
+          <p className={styles.filmInfoDescription}>{info}</p>
+        </div>
 
       </article>
     )

@@ -1,0 +1,35 @@
+.article {
+  display: flex;
+
+  div:first-child {
+    margin-right: 2em;
+  }
+
+  div:last-child {
+    margin-left: 2em;
+    max-width: 20em;
+  }
+};
+
+.filmInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.filmInfoDate {
+  font-size: 2em;
+}
+
+.filmInfoDescription {
+  font-size: 1.2em;
+  margin: 0.5em 0;
+}
+
+.filmInfoTitle {
+  font-size: 4em;
+  margin: 0.5em 0;
+}
+
+.image {
+  border-radius: 15px;
+}
