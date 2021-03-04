@@ -1,8 +1,10 @@
 import React from 'react';
 
-const Home = () => {
+import Layout from '../components/Layout/Layout';
+
+const Home: React.FC = () => {
   return (
-    <>Home</>
+    <Layout>Home</Layout>
   );
 }
 
