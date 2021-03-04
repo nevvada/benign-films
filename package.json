@@ -2,7 +2,7 @@
   "name": "benign-films",
   "version": "1.0.0",
   "description": "This is the site to Benign Films",
-  "main": "index.js",
+  "main": "index.tsx",
   "scripts": {
     "build": "next build",
     "dev": "next dev",
