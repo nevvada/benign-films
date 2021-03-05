@@ -1,21 +1,35 @@
+@import 'src/constants/breakpoints';
+
 .article {
   display: flex;
 
-  div:first-child {
-    margin-right: 2em;
+  @media screen and (max-width: $laptop) {
+    margin-bottom: 2em;
+    // font-size: 15em;
+    div:first-child {
+      margin-right: 2em;
+    }
+  
+    div:last-child {
+      margin-left: 2em;
+      max-width: 20em;
+    }
   }
 
-  div:last-child {
-    margin-left: 2em;
-    max-width: 20em;
+  @media screen and (max-width: $tablet) {
+    flex-direction: column;
+    margin-bottom: 0;
   }
 };
 
 .filmInfo {
   display: flex;
   flex-direction: column;
-  transform: rotate(-10deg);
   padding-left: 2em;
+
+  @media screen and (max-width: $laptop) {
+    padding-left: 0;
+  }
 }
 
 .filmInfoDate {
@@ -23,13 +37,17 @@
 }
 
 .filmInfoDescription {
-  font-size: 1.2em;
+  font-size: 1.4em;
   margin: 1em 0;
 }
 
 .filmInfoTitle {
   font-size: 4em;
   margin: 1.5em 0;
+
+  @media screen and (max-width: $tablet) {
+    margin: 0.5em 0;
+  }
 }
 
 .image {

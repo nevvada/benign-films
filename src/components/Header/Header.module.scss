@@ -1,8 +1,16 @@
+@import 'src/constants/breakpoints';
+
 .navBar {
   display: flex;
   font-size: 4em;
   justify-content: space-around;
   margin: 0.5em 0 2em 0;
+
+  @media screen and (max-width: $laptop) {
+    flex-direction: column;
+    font-size: 2em;
+    align-items: center;
+  }
 }
 
 .navItem > a {
@@ -14,6 +22,7 @@
 
   &:hover {
     text-decoration: underline solid #FFF;
+    transform: rotate(5deg);
   }
 }
 
