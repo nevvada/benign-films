@@ -1,4 +1,18 @@
+@import 'src/constants/breakpoints';
+
 .homepageTitle {
   font-size: 22em;
   text-align: center;
+
+  @media screen and (max-width: $laptop) {
+    font-size: 15em;
+  }
+
+  @media screen and (max-width: $tablet) {
+    font-size: 10em;
+  }
+
+  @media screen and (max-width: $mobile) {
+    font-size: 6em;
+  }
 }
